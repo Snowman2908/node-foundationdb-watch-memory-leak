@@ -13,10 +13,9 @@ services:
       - foundationdb
 
   foundationdb:
-    image: foundationdb/foundationdb:7.2.0
+    image: foundationdb/foundationdb:7.2.2
     environment:
       FDB_CLUSTER_FILE: /etc/foundationdb/fdb.cluster
     platform: linux/amd64
-    entrypoint: /bin/sh
     volumes:
       - cluster-file:/etc/foundationdb/
