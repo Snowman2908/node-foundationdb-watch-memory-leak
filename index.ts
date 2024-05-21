@@ -2,7 +2,7 @@ import * as fdb from 'foundationdb';
 import bytes = require('bytes');
 import * as fs from 'fs';
 
-fdb.setAPIVersion(620);
+fdb.setAPIVersion(720);
 
 main().catch((err) => console.log(err));
 
